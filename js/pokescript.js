@@ -34,4 +34,13 @@ function crearPokemon(){
                                   puntosAtaque.value)
 
   pokemones.push(pokemonCreado);
+  seleccionarPokemon1();
 };
+
+function seleccionarPokemon1(){
+  var pokemon1 = document.getElementById("nombrePokemon").value;
+  var opcion1 = document.createElement("option");
+  opcion1.innerHTML = pokemon1;
+  document.getElementById("seleccion").appendChild(opcion1);
+
+}
